@@ -22,6 +22,6 @@ Usage: crd-to-cdktf [OPTIONS] [FILE]
     -h, --help    Print this help message
     -o, --output  Output directory
   Examples:
-    kubeclt get crds -o yaml | crd-to-cdktf -o crds
+    kubectl get crds -o yaml | crd-to-cdktf -o crds
     crd-to-cdktf mycrd.yaml -o crds
 ```
