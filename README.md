@@ -7,7 +7,7 @@ Turn Kubernetes Custom Resource Definitions (CRDs) into typesafe CDKTF construct
 Install `crd-to-cdktf` as an npm dependency in your project:
 
 ```sh
-npm i -D crd-to-cdktf`
+npm i -D crd-to-cdktf
 ```
 
 Or download `crd-to-cdktf` as a [single executable application](https://nodejs.org/api/single-executable-applications.html)
