@@ -1,6 +1,6 @@
 {
   "name": "crd-to-cdktf",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Turn Kubernetes Custom Resource Definitions (CRDs) into typesafe CDKTF constructs",
   "keywords": [
     "kubernetes",
