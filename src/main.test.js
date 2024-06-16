@@ -90,8 +90,9 @@ describe("transformCRD", () => {
     const validCRD = {
       apiVersion: "apiextensions.k8s.io/v1",
       kind: /** @type {const} */ ("CustomResourceDefinition"),
-      metadata: { name: "myresource.example.com" },
+      metadata: { name: "testkind.myresource.example.com" },
       spec: {
+        group: "myresource.example.com",
         names: { kind: "TestKind" },
         versions: [
           {
@@ -147,8 +148,9 @@ export class TestKind extends Manifest {
     const validCRD = {
       apiVersion: "apiextensions.k8s.io/v1",
       kind: /** @type {const} */ ("CustomResourceDefinition"),
-      metadata: { name: "myresource.example.com" },
+      metadata: { name: "testkind.myresource.example.com" },
       spec: {
+        group: "myresource.example.com",
         names: { kind: "TestKind" },
         versions: [
           {

@@ -22,6 +22,7 @@ import {
  * @property {Object} metadata
  * @property {string} metadata.name
  * @property {Object} spec
+ * @property {string} spec.group
  * @property {Object} spec.names
  * @property {string} spec.names.kind
  * @property {Object[]} spec.versions
@@ -63,7 +64,7 @@ export function isCRDList(obj) {
  * @returns {Promise<ts.Node[]>}
  */
 export async function transformCRD(crd) {
-  const apiVersion = crd.metadata.name;
+  const apiVersion = crd.spec.group;
   const kind = crd.spec.names.kind;
   const singleVersion = crd.spec.versions.length === 1;
 
